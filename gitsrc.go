@@ -10,11 +10,12 @@ import (
 
 const version = "0.1.0" // adheres to semantic versioning
 
+// GetGitConnector returns a Git CLI instance.
 func GetGitConnector() git.Connector {
 	return git.NewCLI()
 }
 
-// Stop removes the co-author declaration from the commit template, if any.
+// Update pulls the latest changes from the default remote.
 func Update(cli git.Connector, out, errors io.Writer) error {
 	return fmt.Errorf("not yet implemented")
 }
